@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- added favicons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/personal-homework/03-quiz-homework/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/personal-homework/03-quiz-homework/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/personal-homework/03-quiz-homework/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/personal-homework/03-quiz-homework/assets/css/style.css">
+
+    <title>Star Trek Quiz</title>
+
+</head>
+
+<body>
+    <!-- created the navbar and set "try again" to the home button, for an easy restart -->
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="https://aftongauntlett.github.io/star-trek-quiz/">Try Again</a>
+    </nav>
+    <!-- created a carousel - edited it down to what I needed -->
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="0">
+                <img src="/personal-homework/03-quiz-homework/assets/images/spacecat2.png" class="d-block w-100"
+                    alt="Captain Picard from Star Trek">
+            </div>
+        </div>
+
+        <!-- created a card for the text under the carousel -->
+        <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
+            <div class="card-header d-flex justify-content-center">Game Over</div>
+            <div class="card-body text-dark">
+                <p>Congratulations!</p>
+                <p>You scored</p>
+                <p>_____</p>
+            </div>
+            <div class="d-flex justify-content-center">
+
+                <!-- add JS here to make initials and score board work -->
+
+            </div>
+        </div>
+        <form>
+            <div class="form-group initial">
+                <label for="formGroupExampleInput">Enter your initials to join the leader board.</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
