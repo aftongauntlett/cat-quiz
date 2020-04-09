@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(193, 185, 200);
+}
+h1 {
+    text-align: center
+}
+p {
+    text-align: center;
+
+}
+
+.card-text {
+    text-align: left;
+}
