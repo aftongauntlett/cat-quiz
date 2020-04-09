@@ -2,7 +2,7 @@ Title:
 Star Trek Quiz
 
 Description:
-This quiz allows the user 2 minutes to complete a series of 15 questions pertianing to Star Trek. A correct answer awards 1 point and advances to the following question. An incorrect answer will move you onto the following question - but will also accelerate the timer 10 by seconds and reward 0 points. By completing the quiz before the timer runs-out, you will be given the option to save your high-score and initials. If the timer runs out...it is game over.
+This quiz allows the user 2 minutes to complete a series of 15 questions pertaining to Star Trek. A correct answer awards 1 point and advances to the following question. An incorrect answer will move you onto the following question - but will also accelerate the timer 10 by seconds and reward 0 points. By completing the quiz before the timer runs-out, you will be given the option to save your high-score and initials. If the timer runs out...it is game over.
 
 How to:
 Click <Begin-Quiz> to start. 
