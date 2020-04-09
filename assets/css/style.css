@@ -47,6 +47,10 @@ p {
     border: black;
 
 }
+
+.list-group {
+    padding-top: 15px;
+}
 /* wanted to give the button more space to look nicer */
 .btn {
     margin-bottom: 35px;
