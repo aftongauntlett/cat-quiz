@@ -100,8 +100,13 @@ form {
 }
 
 .initial {
-  padding: 0 200px;
+    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     font-family: 'Josefin Slab', serif;
+    color: rgb(41, 39, 44);
+    font-size: 22px;
+
 
 }
 
