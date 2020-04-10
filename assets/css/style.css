@@ -1,5 +1,7 @@
 body {
     background-color: #d2d6db ;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 .body-q1 {
@@ -11,41 +13,55 @@ h2 {
     font-size: 35px;
     padding-bottom: 20px;
     text-decoration: underline;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 20px;
-    text-decoration: underline;
+    font-family: 'Josefin Slab', serif;
+
 }
     
 p {
     text-align: center;
+    font-family: 'Josefin Slab', serif;
+
 
 }
 
 .question-p {
-font-size: 25px;
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 /* needed the card to be centered */
 .card {
-        margin: 0 auto; 
-        float: none; 
-        margin-bottom: 40px; 
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 40px; 
 }
 
 .card-text {
     font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 .card-body {
     text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+
 }
 
 .card-header {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 /* the card had a blue background, wanted to overwrite that */
@@ -68,8 +84,10 @@ font-size: 25px;
     padding: 12px;
     padding-right: 20px;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+    font-family: 'Josefin Slab', serif;
+
     
 }
 /* wanted the form text to be larger */
@@ -77,21 +95,30 @@ form {
     font-size: 20px;
     text-align: center;
     padding-top: 20px;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 .initial {
   padding: 0 200px;
+    font-family: 'Josefin Slab', serif;
+
 }
 
-/* .navbar {
-    background-color: rgb(183, 189, 200) !important;
+.initialForm {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Josefin Slab', serif;
+    
+}
 
-} */
 
 .navbar-brand {
     font-size: 30px !important;
     font-weight: 700;
     color: #dde5f0 !important;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 .form-check {
@@ -100,6 +127,8 @@ form {
 
 #formGroupExampleInput {
     text-align: center;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 #timer  {
@@ -113,4 +142,6 @@ form {
     margin-left: 350px;
     color: rgb(16, 17, 17);
     background-color: rgb(112, 189, 153);
+    font-family: 'Josefin Slab', serif;
+
 }
