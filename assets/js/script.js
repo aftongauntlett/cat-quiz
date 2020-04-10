@@ -3,7 +3,7 @@
 var questions = [
     {
         // created an array of objects for each question
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        question: "What is the name of the ship captained by Jean Luc Picard?",
         answer: "NCC-1701",
         choices: [
             "NCC-1701",
@@ -13,111 +13,115 @@ var questions = [
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "What is Data's cats name?",
+        answer: "Spot",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Kitty",
+            "Beta",
+            "Spot",
+            "Sparky",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "What was Geordi La Forge's station abord the Enterprise?",
+        answer: "Chief Engineer",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Flight Controller",
+            "First Officer",
+            "Chief Operations Officer",
+            "Chief Engineer",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "What was Data's brothers name?",
+        answer: "Lore",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Beta",
+            "Mode",
+            "Lore",
+            "Meta",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "Planet Remus is home to which race?",
+        answer: "Romulans",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Klingons",
+            "Romulans",
+            "Orions",
+            "Andorians",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "What was the ultimate goal of The Borg?",
+        answer: "Achieve perfection",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Achieve perfection",
+            "Assimulate civilization",
+            "Destroy all planets",
+            "Destroy Earth",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "Deanna Troi is half human, half what?",
+        answer: "Betazoid",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Romulan",
+            "Vulcan",
+            "Betazoid",
+            "Andoirian",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "Who kept a small holographic portrait of Tasha Yar after her death?",
+        answer: "Data",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Data",
+            "Riker",
+            "Worf",
+            "Geordi",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "What season did Q first appear?",
+        answer: "Season 1",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Season 1",
+            "Season 2",
+            "Season 3",
+            "Season 4",
         ]
     },
     {
-        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
-        answer: "NCC-1701",
+        question: "Which actor played the role of Wesley Crusher?",
+        answer: "Wil Wheaton",
         choices: [
-            "NCC-1701",
-            "Death Star",
-            "Firefly",
-            "Saturn-V",
+            "Patrick Stewart",
+            "Wil Wheaton",
+            "Leonardo DiCaprio",
+            "Jonathan Frakes",
         ]
-    },
-    
+    }
+
+]
 
 
 var answers = [
-    "Answer 1",
-    "Answer 2",
-    "Answer 3",
-    "Answer 4",
-    "Answer 5",
-    "Answer 6",
-    "Answer 7",
-    "Answer 8",
-    "Answer 9",
-    "Answer 10",
+
+    "NCC-1701",
+    "Spot",
+    "Chief Engineer",
+    "Lore",
+    "Romulans",
+    "Achieve Perfection",
+    "Betazoid",
+    "Data",
+    "Season 1",
+    "Wil Wheaton",
 
 ]
+
+
 
 
 // create function for button "make it so" to begin the quiz, switch to the Questions page and beging the countdown timer (displaying the timer)
