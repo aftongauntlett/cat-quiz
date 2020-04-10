@@ -129,17 +129,14 @@
 
 
 
-    // Set the time we're counting down to
-    // Update the count down every 1 second
 
 
-    // create a way for the timer to lose 10 seconds if a wrong answer is submitted
-    // create a way for the timer to send user to Game Over page only if time = 0 while still in question selection stage (make timer end when all questions answered)
-
-
-
-    // Set the timer countdown for 2 minutes
+    // Set the timer countdown to begin at 2 minutes
     var countDownTimer = new Date(new Date().getTime() + 2 * 60000);
+
+    // add if statement here to deduct 10 seconds from the timer if answer is incorrect
+    // create a way for the timer to send user to Game Over page only if time = 0 while still in question selection stage (make timer end when all questions answered)
+    // create a way for timer background color to turn red at 30 seconds
 
     // Update the count down every 1 second
     var x = setInterval(function () {
