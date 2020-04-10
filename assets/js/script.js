@@ -12,21 +12,98 @@ var questions = [
             "Saturn-V",
         ]
     },
-    "What is the name of Data's cat?",
-    "Question 3",
-    "Question 4",
-    "Question 5",
-    "Question 6",
-    "Question 7",
-    "Question 8",
-    "Question 9",
-    "Question 10",
-    "Question 11",
-    "Question 12",
-    "Question 13",
-    "Question 14",
-    "Question 15",
-]
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    {
+        question: "What is the name of the ship captained by Jean Luc Picard in Star Trek: The Next Generation?",
+        answer: "NCC-1701",
+        choices: [
+            "NCC-1701",
+            "Death Star",
+            "Firefly",
+            "Saturn-V",
+        ]
+    },
+    
+
 
 var answers = [
     "Answer 1",
@@ -39,11 +116,7 @@ var answers = [
     "Answer 8",
     "Answer 9",
     "Answer 10",
-    "Answer 11",
-    "Answer 12",
-    "Answer 13",
-    "Answer 14",
-    "Answer 15",
+
 ]
 
 
