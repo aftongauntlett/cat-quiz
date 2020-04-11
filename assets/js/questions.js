@@ -1,9 +1,11 @@
+var countDownTimer = 120;
 var myQuestion = document.getElementById("myQuestion")
-var form = document.getElementById("answers-form");
+const questionArea = document.getElementById("question-area");
+var score = 0;
 var currentQuestionIndex = 0
 var questions = [
     {
-        // created an array of objects for each question
+        // created an array of objects for each question and answer
         question: "What is the name of the ship captained by Jean Luc Picard?",
         answer: "NCC-1701",
         choices: [
@@ -107,8 +109,9 @@ var questions = [
 ]
 
 function nextQuestion() {
-    while (form.children.length > 0) {
-        form.removeChild(form.children[0])
+
+    while (questionArea.children.length > 0) {
+        questionArea.removeChild(questionArea.children[0])
     }
 
     var currentQuestion = questions[currentQuestionIndex]
@@ -117,127 +120,59 @@ function nextQuestion() {
 
     // Create a for loop to iterate over current question.choices
 
-
     for (var i = 0; i < currentQuestion.choices.length; i++) {
-        var myDiv = document.createElement("div")
-        myDiv.setAttribute("class", "form-check");
-        myDiv.setAttribute("id", currentQuestion.choices[i] + "div")
-        form.appendChild(myDiv)
-
-        //create a new var and an input field 
-        var myInput = document.createElement("input")
-
-        //create a new var and label field
-        var myLabel = document.createElement("label")
-
-        //assign input field a class of form-check-input
-        myInput.setAttribute("class", "form-check-input");
-
-        //give the input field the value of currentQuestion.answer
-        myInput.setAttribute("type", "radio")
-        myInput.setAttribute("value", currentQuestion.choices[i])
-        myInput.setAttribute("name", "questions")
-
-
-        //give the input field the ID of myQuestion + the index
-        myInput.setAttribute("id", "question" + i)
-
-        //give the label the class of form-check-label
-        myLabel.setAttribute("class", "form-check-label");
-
-        //give the label the attribute for and set it equal to the ID of the input
-        myLabel.setAttribute("for", "question" + i)
-        myLabel.textContent = currentQuestion.choices[i]
-
-        // For each choice, create a div and append it to the form
-        myDiv.appendChild(myInput)
-        myDiv.appendChild(myLabel)
-
+        const button = document.createElement('button')
+        button.textContent = currentQuestion.choices[i]
+        button.setAttribute('id', 'question' + i)
+        questionArea.appendChild(button);
+        setupClickHandler(i)
 
     }
+}
+
+
+function setupClickHandler(index) {
+    const button = document.getElementById('question' + index)
+    const currentQuestion = questions[currentQuestionIndex]
+    button.addEventListener("click", function () {
+        if (currentQuestion.choices[index] === currentQuestion.answer) {
+            score++
+        } else {
+            countDownTimer -= 10
+        }
+        currentQuestionIndex++
+        if (currentQuestionIndex < questions.length) {
+            nextQuestion();
+        } else {
+            endGame();
+        }
+    })
 }
 
 nextQuestion();
 
-function scoreQuestion() {
-    console.log("test")
+setInterval(function () {
+    if (countDownTimer < 0) {
+        endGame()
+    } else {
+        countDownTimer--
+    }
+    const timer = document.getElementById("timer")
+    var timerString = "";
+    if (countDownTimer > 60) {
+        timerString += Math.floor(countDownTimer / 60) + "m ";
+    }
+
+    //used mod to get seconds
+    var seconds = countDownTimer % 60
+    timerString += seconds + "s"
+    timer.innerHTML = timerString
+}, 1000)
+
+function endGame() {
+    window.location.pathname = "./gameover.html"
 }
 
-var button = document.getElementById("submit-button")
-button.addEventListener("click", function () {
-    var question = questions[currentQuestionIndex]
-    currentQuestionIndex++
-    nextQuestion();
-})
 
 
-
-
-
-// create label tags inside of the form check div into child elements
-
-// To get the current item in the array:
-// array[i]
-
-
-
-
-
-
-// create a way for the all 15 questions to loop through while staying on the same page
-
-// for (var i = 0; i < questions.length; i++) {
-//     console.log(questions[i]);
-// }
-
-// for (var i = 0; i < answers.length; i++) {
-//     console.log(answers[i]);
-// }
-
-
-
-// create a function for the "make it so" button on the questions page to move to the next set of questions
-
-
-// create a way for the multiple choice selections to verify if true or false and calculate the score
-
-
-
-
-
-// Set the timer countdown to begin at 2 minutes
-var countDownTimer = new Date(new Date().getTime() + 2 * 60000);
-
-// add if statement here to deduct 10 seconds from the timer if answer is incorrect
-
-// create a way for the timer to send user to Game Over page only if time = 0 while still in question selection stage (make timer end when all questions answered)
-// create a way for timer background color to turn red at 30 seconds
-
-// Update the count down every 1 second
-var x = setInterval(function () {
-
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down start
-    var distance = countDownTimer - now;
-
-    // Time calculations for minutes and seconds
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in the element with id="timer"
-    document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
-    // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "You Boldy Lost";
-    }
-}, 1000);
-
-
-
-
-
-// create a function for the submit button on the enter initials form, to actually submit and store the initials alongside their score. Once clicked, move to a new page displaying the leader board with users initials and score added
-
-// make sure the scoreboard can store everyones entries even when refreshed.
+// Ran out of time to create the scoreboard and saving it local storage. 
