@@ -141,15 +141,9 @@ form {
 
 #timer  {
     font-size: 40px;
-    border-radius: 1em;
-    border-color: black;
-    border-style: solid;
-    padding: 15px;
-    margin-top: 30px;
-    margin-right: 350px;
-    margin-left: 350px;
-    color: rgb(16, 17, 17);
-    background-color: rgb(112, 189, 153);
     font-family: 'Josefin Slab', serif;
+    margin-top: 30px;
+    border-style: 
+
 
 }
