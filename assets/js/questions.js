@@ -180,9 +180,18 @@ setInterval(function () {
 
 // what happens when the function endGame is called anywhere in the code. It sends you to the game over page. 
 function endGame() {
-    window.location.pathname = "https://aftongauntlett.github.io/star-trek-quiz/gameover.html"
+    window.location = "https://aftongauntlett.github.io/star-trek-quiz/gameover.html"
 }
 
 
 
 // Ran out of time to create the scoreboard and saving it local storage. Spent a lot of time on Google for this HW assignment.
+// var firstNameInput = document.querySelector("#first-name");
+
+
+// submit.addEventListener("click", function (event) {
+//     event.preventDefault();
+
+//     localStorage.setItem("firstname", "");
+//     document.getElementById("result").innerHTML = localStorage.getItem("firstname");
+
