@@ -180,7 +180,7 @@ setInterval(function () {
 
 // what happens when the function endGame is called anywhere in the code. It sends you to the game over page. 
 function endGame() {
-    window.location.pathname = "./gameover.html"
+    window.location.pathname = "https://aftongauntlett.github.io/gameover.html"
 }
 
 
