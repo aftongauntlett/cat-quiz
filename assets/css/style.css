@@ -3,6 +3,7 @@ body {
     font-family: 'Josefin Slab', serif;
     text-align: center;
     font-size: 22px;
+    
 
 }
 
@@ -144,7 +145,7 @@ form {
     border-color: black;
     border-style: solid;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 350px;
     margin-left: 350px;
     color: rgb(16, 17, 17);
