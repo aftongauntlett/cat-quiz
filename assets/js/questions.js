@@ -6,6 +6,7 @@ var currentQuestionIndex = 0
 var questions = [
     {
         // created an array of objects for each question and answer
+
         question: "What is the name of the ship captained by Jean Luc Picard?",
         answer: "NCC-1701",
         choices: [
@@ -108,7 +109,11 @@ var questions = [
 
 ]
 
+// created a function that displays the questions and runs them until the timer ends or the last question is answered.
+
 function nextQuestion() {
+
+    // when the while loop begins, it will remove all existing buttons (children)
 
     while (questionArea.children.length > 0) {
         questionArea.removeChild(questionArea.children[0])
@@ -118,7 +123,7 @@ function nextQuestion() {
     myQuestion.innerHTML = currentQuestion.question
 
 
-    // Create a for loop to iterate over current question.choices
+    // Created a for loop to iterate over the question choices in the array and created a button
 
     for (var i = 0; i < currentQuestion.choices.length; i++) {
         const button = document.createElement('button')
@@ -130,6 +135,7 @@ function nextQuestion() {
     }
 }
 
+// makes it so clicking the button does something. If the currentQuestion.choices === currentQuestion.answer the score goes up, if they do not match, the timer loses ten seconds. If there are no more questions or the timer reaches 0, it ends the game.
 
 function setupClickHandler(index) {
     const button = document.getElementById('question' + index)
@@ -149,11 +155,15 @@ function setupClickHandler(index) {
     })
 }
 
+// calls the function for the next question 
+
 nextQuestion();
+
+// created a timer, if countdown reaches 0 - end game. Used mod to get seconds.
 
 setInterval(function () {
     if (countDownTimer < 0) {
-        endGame()
+        endGame();
     } else {
         countDownTimer--
     }
@@ -163,16 +173,16 @@ setInterval(function () {
         timerString += Math.floor(countDownTimer / 60) + "m ";
     }
 
-    //used mod to get seconds
     var seconds = countDownTimer % 60
     timerString += seconds + "s"
     timer.innerHTML = timerString
 }, 1000)
 
+// what happens when the function endGame is called anywhere in the code. It sends you to the game over page. 
 function endGame() {
     window.location.pathname = "./gameover.html"
 }
 
 
 
-// Ran out of time to create the scoreboard and saving it local storage. 
+// Ran out of time to create the scoreboard and saving it local storage. Spent a lot of time on Google for this HW assignment.
