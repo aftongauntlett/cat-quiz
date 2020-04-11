@@ -116,15 +116,36 @@ myQuestion.innerHTML = currentQuestion.question
 for (var i = 0; i < currentQuestion.choices.length; i++) {
     var myDiv = document.createElement("div")
     myDiv.setAttribute("class", "form-check");
+    myDiv.setAttribute("id", currentQuestion.choices[i] + "div")
     form.appendChild(myDiv)
 
     //create a new var and an input field 
+    var myInput = document.createElement("input")
+
     //create a new var and label field
+    var myLabel = document.createElement("label")
+
     //assign input field a class of form-check-input
+    myInput.setAttribute("class", "form-check-input");
+
     //give the input field the value of currentQuestion.answer
+    myInput.setAttribute("type", "radio")
+    myInput.setAttribute("value", currentQuestion.choices[i])
+    myInput.setAttribute("name", "questions")
+
+
     //give the input field the ID of myQuestion + the index
+    myInput.setAttribute("id", "question" + i)
+
     //give the label the class of form-check-label
+    myLabel.setAttribute("class", "form-check-label");
+
     //give the label the attribute for and set it equal to the ID of the input
+    myLabel.setAttribute("for", "question" + i)
+    myLabel.textContent = currentQuestion.choices[i]
+
+    myDiv.appendChild(myInput)
+    myDiv.appendChild(myLabel)
 
 
 }
@@ -133,9 +154,6 @@ for (var i = 0; i < currentQuestion.choices.length; i++) {
 
 
 // create label tags inside of the form check div into child elements
-
-console.log(question1.children);
-
 
 // To get the current item in the array:
 // array[i]
