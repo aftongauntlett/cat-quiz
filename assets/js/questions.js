@@ -106,51 +106,72 @@ var questions = [
 
 ]
 
-var currentQuestion = questions[currentQuestionIndex]
-myQuestion.innerHTML = currentQuestion.question
+function nextQuestion() {
+    while (form.children.length > 0) {
+        form.removeChild(form.children[0])
+    }
+
+    var currentQuestion = questions[currentQuestionIndex]
+    myQuestion.innerHTML = currentQuestion.question
 
 
-// Create a for loop to iterate over current question.choices
+    // Create a for loop to iterate over current question.choices
 
 
-for (var i = 0; i < currentQuestion.choices.length; i++) {
-    var myDiv = document.createElement("div")
-    myDiv.setAttribute("class", "form-check");
-    myDiv.setAttribute("id", currentQuestion.choices[i] + "div")
-    form.appendChild(myDiv)
+    for (var i = 0; i < currentQuestion.choices.length; i++) {
+        var myDiv = document.createElement("div")
+        myDiv.setAttribute("class", "form-check");
+        myDiv.setAttribute("id", currentQuestion.choices[i] + "div")
+        form.appendChild(myDiv)
 
-    //create a new var and an input field 
-    var myInput = document.createElement("input")
+        //create a new var and an input field 
+        var myInput = document.createElement("input")
 
-    //create a new var and label field
-    var myLabel = document.createElement("label")
+        //create a new var and label field
+        var myLabel = document.createElement("label")
 
-    //assign input field a class of form-check-input
-    myInput.setAttribute("class", "form-check-input");
+        //assign input field a class of form-check-input
+        myInput.setAttribute("class", "form-check-input");
 
-    //give the input field the value of currentQuestion.answer
-    myInput.setAttribute("type", "radio")
-    myInput.setAttribute("value", currentQuestion.choices[i])
-    myInput.setAttribute("name", "questions")
-
-
-    //give the input field the ID of myQuestion + the index
-    myInput.setAttribute("id", "question" + i)
-
-    //give the label the class of form-check-label
-    myLabel.setAttribute("class", "form-check-label");
-
-    //give the label the attribute for and set it equal to the ID of the input
-    myLabel.setAttribute("for", "question" + i)
-    myLabel.textContent = currentQuestion.choices[i]
-
-    myDiv.appendChild(myInput)
-    myDiv.appendChild(myLabel)
+        //give the input field the value of currentQuestion.answer
+        myInput.setAttribute("type", "radio")
+        myInput.setAttribute("value", currentQuestion.choices[i])
+        myInput.setAttribute("name", "questions")
 
 
+        //give the input field the ID of myQuestion + the index
+        myInput.setAttribute("id", "question" + i)
+
+        //give the label the class of form-check-label
+        myLabel.setAttribute("class", "form-check-label");
+
+        //give the label the attribute for and set it equal to the ID of the input
+        myLabel.setAttribute("for", "question" + i)
+        myLabel.textContent = currentQuestion.choices[i]
+
+        // For each choice, create a div and append it to the form
+        myDiv.appendChild(myInput)
+        myDiv.appendChild(myLabel)
+
+
+    }
 }
 
-// For each choice, create a div and append it to the form
+nextQuestion();
+
+function scoreQuestion() {
+    console.log("test")
+}
+
+var button = document.getElementById("submit-button")
+button.addEventListener("click", function () {
+    var question = questions[currentQuestionIndex]
+    currentQuestionIndex++
+    nextQuestion();
+})
+
+
+
 
 
 // create label tags inside of the form check div into child elements
@@ -161,8 +182,6 @@ for (var i = 0; i < currentQuestion.choices.length; i++) {
 
 
 
-
-//create function for "try again" button = to send user back to the start, resetting everything
 
 
 // create a way for the all 15 questions to loop through while staying on the same page
