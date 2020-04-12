@@ -136,11 +136,9 @@ function nextQuestion() {
         const button = document.createElement('button')
         button.textContent = currentQuestion.choices[i]
         button.setAttribute('id', 'question' + i)
+        button.setAttribute("class", "buttonCss")
         questionArea.appendChild(button);
         setupClickHandler(i)
-
-        // document.getElementById("mainImage").src = currentQuestion.image[i]
-
     }
 }
 

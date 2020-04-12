@@ -33,23 +33,21 @@
     </nav>
     <!-- created a carousel - edited it down to what I needed -->
     <!-- added the container with rows and 12 columns so the page content looks good on any size screen (I think) -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-interval="0">
-                            <!-- created a div for the main image to make it look nicer and scale better on dif size screens -->
-                            <div class="mainImage">
-                                <img src="./assets/images/tng.jpg" class="d-block w-100" alt="Cat in Space">
-                            </div>
-                        </div>
-                    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="0">
+                <!-- created a div for the main image to make it look nicer and scale better on dif size screens -->
+                <div class="mainImage">
+                    <img src="./assets/images/tng.jpg" class="d-block w-100" alt="Star Trek">
                 </div>
             </div>
         </div>
     </div>
+
     <!-- created a card for the text under the carousel -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-sm-6"> -->
     <div class="d-flex justify-content-center">
         <div class="card-body text-dark">
             <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
@@ -58,33 +56,36 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <p>Name</p>
+                            <p class="p2">Name</p>
                             <span class=col-sm id="firstName" style="font-size: 35px;"></span>
                         </div>
-                        <div class="col-sm">
-                            <p>Score</p>
-                            <span class=col-sm id="score" style="font-size: 35px;"></span>
 
+                        <div class="col-sm">
+                            <p class="p2">Score</p>
+                            <span class=col-sm id="score" style="font-size: 35px;"></span>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
 
-        <script src="./assets/js/score.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/score.js"></script>
 </body>
 
 </html>
