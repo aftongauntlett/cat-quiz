@@ -28,47 +28,64 @@
 
 <body>
     <!-- created the navbar and set "try again" to the home button, for an easy restart -->
+    <!-- added the container with rows and 12 columns so the page content looks good on any size screen (I think) -->
+
     <nav class="navbar navbar-light bg-dark">
         <a class="navbar-brand" href="https://aftongauntlett.github.io/star-trek-quiz/">Try Again</a>
     </nav>
-    <!-- created a carousel - edited it down to what I needed -->
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="0">
-                <img src="./assets/images/makeitso.png" class="d-block w-100" alt="Captain Picard from Star Trek">
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- created a carousel - edited it down to what I needed -->
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="0">
+                            <!-- created a div for the main image to make it look nicer and scale better on dif size screens -->
+                            <div class="mainImage">
+                                <img src="./assets/images/makeitso.png" class="d-block w-100"
+                                    alt="Captain Picard from Star Trek">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- created a card for the text under the carousel -->
+                    <!-- changed max width from 18rem to auto -->
+                    <div class="card border-dark mt-5 mb-3" style="max-width: auto;">
+                        <div class="card-header d-flex justify-content-center">Star Trek</div>
+                        <div class="card-body text-dark">
+                            <p>This is a timed quiz with multiple choice questions.</p>
+                            <p>Answer them all before your time runs out.</p>
+                            <p>There will be 10 questions and you will have 2 minutes to answer them all.</p>
+                            <p>Be careful,
+                                each
+                                incorrect answer will deduct 10 seconds from the timer!</p>
+                            <p>Ready?</p>
+                        </div>
+                        <div class="ButtonStart d-flex justify-content-center">
+                            <a href="./questions.html" class="btn btn-dark">Make it so.</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- created a card for the text under the carousel -->
-        <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
-            <div class="card-header d-flex justify-content-center">Star Trek</div>
-            <div class="card-body text-dark">
-                <p>This is a timed quiz with multiple choice questions.</p>
-                <p>Answer them all before your time runs out.</p>
-                <p>There will be 10 questions and you will have 2 minutes to answer them all. <p>Be careful, each
-                        incorrect answer will deduct 10 seconds from the timer!</p>
-                    <p>Ready?</p>
-            </div>
-            <div class="ButtonStart d-flex justify-content-center">
-                <a href="./questions.html" class="btn btn-dark">Make it so.</a>
-            </div>
 
-        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-
-        <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

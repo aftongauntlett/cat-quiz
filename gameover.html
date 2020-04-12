@@ -26,45 +26,59 @@
 </head>
 
 <body>
+
     <!-- created the navbar and set "try again" to the home button, for an easy restart -->
     <nav class="navbar navbar-light bg-dark">
         <a class="navbar-brand" href="https://aftongauntlett.github.io/star-trek-quiz/">Try Again</a>
     </nav>
     <!-- created a carousel - edited it down to what I needed -->
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="0">
-                <img src="./assets/images/spacecat2.png" class="d-block w-100" alt="Cat in Space">
+    <!-- added the container with rows and 12 columns so the page content looks good on any size screen (I think) -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="0">
+                            <!-- created a div for the main image to make it look nicer and scale better on dif size screens -->
+                            <div class="mainImage">
+                                <img src="./assets/images/spacecat2.png" class="d-block w-100" alt="Cat in Space">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- created a card for the text under the carousel -->
+                    <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
+                        <div class="card-header d-flex justify-content-center">Game Over</div>
+                        <div class="card-body text-dark">
+                            <p>Congratulations!</p>
+                            <p>You boldly scored:</p>
+                            <!-- display final score -->
+                            <span id="score" style="font-size: 35px;">0</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+
+                            <!-- add JS here to make initials and score board work -->
+
+                        </div>
+                    </div>
+
+                    <form class=initialForm>
+                        <div class="form-group initial firstName">
+                            <label for="formGroupExampleInput"> Enter your first name to join the leader
+                                board.</label>
+                            <input type="text" class="form-control mr-20" id="formGroupExampleInput"
+                                placeholder="First name..." required>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-light" type="button" value="input">Submit</a>
+                            <!-- <a href="" class="btn btn-dark" type="submit" variant="success">Submit</a> -->
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
-
-        <!-- created a card for the text under the carousel -->
-        <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
-            <div class="card-header d-flex justify-content-center">Game Over</div>
-            <div class="card-body text-dark">
-                <p>Congratulations!</p>
-                <p>You boldly scored:</p>
-                <!-- display final score -->
-                <span id="score" style="font-size: 35px;">0</span>
-            </div>
-            <div class="d-flex justify-content-center">
-
-                <!-- add JS here to make initials and score board work -->
-
-            </div>
-        </div>
-        <form class=initialForm>
-            <div class="form-group initial">
-                <label for="formGroupExampleInput">Enter your first name to join the leader board.</label>
-                <input type="text" class="form-control mr-20" id="formGroupExampleInput" placeholder="First name..."
-                    required>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="" class="btn btn-dark" type="submit" variant="success">Submit</a>
-            </div>
-        </form>
-
-
     </div>
 
     <!-- Optional JavaScript -->

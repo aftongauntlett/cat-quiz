@@ -103,9 +103,9 @@ form {
 }
 
 .initial {
-    padding: 200px;
+    /* padding: 200px;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
     font-family: 'Josefin Slab', serif;
     color: rgb(41, 39, 44);
     font-size: 22px;
@@ -114,9 +114,10 @@ form {
 }
 
 .initialForm {
-    margin-left: 150px;
-    margin-right: 150px;
+    /* margin-left: 150px;
+    margin-right: 150px; */
     font-family: 'Josefin Slab', serif;
+    width: 100%;
     
 }
 
@@ -136,14 +137,18 @@ form {
 #formGroupExampleInput {
     text-align: center;
     font-family: 'Josefin Slab', serif;
+    width: 100%;
+    
 
 }
 
 #timer  {
     font-size: 40px;
     font-family: 'Josefin Slab', serif;
-    margin-top: 30px;
-    border-style: 
-
-
+    margin-top: 30px; 
+}
+/* change the main image on index to resize with the window, gave it some padding to make it look nicer */
+.mainImage {
+    size: auto;
+    padding-top: 30px;
 }

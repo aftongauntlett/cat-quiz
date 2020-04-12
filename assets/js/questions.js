@@ -1,3 +1,4 @@
+// started with variables
 var countDownTimer = 120;
 var myQuestion = document.getElementById("myQuestion")
 const questionArea = document.getElementById("question-area");
@@ -6,7 +7,6 @@ var currentQuestionIndex = 0
 var questions = [
     {
         // created an array of objects for each question and answer
-
         question: "What is the name of the ship captained by Jean Luc Picard?",
         answer: "NCC-1701",
         choices: [
@@ -110,11 +110,9 @@ var questions = [
 ]
 
 // created a function that displays the questions and runs them until the timer ends or the last question is answered.
-
 function nextQuestion() {
 
     // when the while loop begins, it will remove all existing buttons (children)
-
     while (questionArea.children.length > 0) {
         questionArea.removeChild(questionArea.children[0])
     }
@@ -124,7 +122,6 @@ function nextQuestion() {
 
 
     // Created a for loop to iterate over the question choices in the array and created a button
-
     for (var i = 0; i < currentQuestion.choices.length; i++) {
         const button = document.createElement('button')
         button.textContent = currentQuestion.choices[i]
@@ -136,7 +133,6 @@ function nextQuestion() {
 }
 
 // makes it so clicking the button does something. If the currentQuestion.choices === currentQuestion.answer the score goes up, if they do not match, the timer loses ten seconds. If there are no more questions or the timer reaches 0, it ends the game.
-
 function setupClickHandler(index) {
     const button = document.getElementById('question' + index)
     const currentQuestion = questions[currentQuestionIndex]
@@ -161,11 +157,9 @@ function setupClickHandler(index) {
 }
 
 // calls the function for the next question 
-
 nextQuestion();
 
 // created a timer, if countdown reaches 0 - end game. Used mod to get seconds.
-
 setInterval(function () {
     if (countDownTimer < 0) {
         endGame();
@@ -185,7 +179,6 @@ setInterval(function () {
 
 
 // what happens when the function endGame is called anywhere in the code. It sends you to the game over page.
-
 function endGame() {
     window.location = "/star-trek-quiz/gameover.html"
 }
