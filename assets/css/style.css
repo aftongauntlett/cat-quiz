@@ -154,6 +154,17 @@ form {
     font-size: 40px;
     font-family: 'Josefin Slab', serif;
     margin-top: 30px; 
+    border-radius: 2rem;
+    background-color: rgba(135, 235, 157, 0.568);
+}
+
+/* had to be more specific to get the timer to recognize this */
+#timer.timerRed {
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif;
+    margin-top: 30px; 
+    border-radius: 2rem;
+    background-color: rgba(235, 135, 135, 0.568);
 }
 
 /* change the main image on index to resize with the window, gave it some padding to make it look nicer */
@@ -187,6 +198,10 @@ form {
     padding-top: 5px;
     padding-bottom: 5px;
     
+}
+
+.scoreQuestions {
+    font-size: 55px;
 }
 
 #firstName {

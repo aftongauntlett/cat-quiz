@@ -171,15 +171,22 @@ nextQuestion();
 
 // created a timer, if countdown reaches 0 - end game. Used mod to get seconds.
 setInterval(function () {
+
     if (countDownTimer < 0) {
         endGame();
     } else {
         countDownTimer--
     }
+
     const timer = document.getElementById("timer")
     var timerString = "";
     if (countDownTimer > 60) {
         timerString += Math.floor(countDownTimer / 60) + "m ";
+    }
+
+    // make it so when the timer gets below 30 seconds the color changes from green to red
+    if (countDownTimer < 30) {
+        timer.setAttribute("class", "timerRed")
     }
 
     var seconds = countDownTimer % 60
