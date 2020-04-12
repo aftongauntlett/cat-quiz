@@ -30,7 +30,7 @@ var questions = [
     },
     {
         image: "./assets/images/geordi.jpg",
-        question: "What was Geordi La Forge's station abord the Enterprise?",
+        question: "What was Geordi La Forge's station aboard the Enterprise?",
         answer: "Chief Engineer",
         choices: [
             "Flight Controller",
@@ -52,7 +52,7 @@ var questions = [
     },
     {
         image: "./assets/images/risa.jpg",
-        question: "Planet was planet Risa known for?",
+        question: "What was planet Risa known for?",
         answer: "Pleasure",
         choices: [
             "Freedom",
