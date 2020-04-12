@@ -36,46 +36,68 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./assets/images/spacecat.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/images/spacecat2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/images/spacecat4.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/images/spacecat5.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/images/spacecat6.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <p>Here are some pictures of some space cats.</p>
+
+                <!-- <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="0">
-                            <!-- created a div for the main image to make it look nicer and scale better on dif size screens -->
+                            created a div for the main image to make it look nicer and scale better on dif size screens
                             <div class="mainImage">
                                 <img src="./assets/images/spacecat2.png" class="d-block w-100" alt="Cat in Space">
                             </div>
                         </div>
+                    </div> -->
+
+                <!-- created a card for the text under the carousel -->
+                <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
+                    <div class="card-header d-flex justify-content-center">Game Over</div>
+                    <div class="card-body text-dark">
+                        <p>You boldly scored:</p>
+                        <!-- display final score -->
+                        <span id="score" style="font-size: 35px;">0</span>
                     </div>
-
-                    <!-- created a card for the text under the carousel -->
-                    <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
-                        <div class="card-header d-flex justify-content-center">Game Over</div>
-                        <div class="card-body text-dark">
-                            <p>You boldly scored:</p>
-                            <!-- display final score -->
-                            <span id="score" style="font-size: 35px;">0</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <!-- add JS here to make initials and score board work -->
-                        </div>
+                    <div class="d-flex justify-content-center">
+                        <!-- add JS here to make initials and score board work -->
                     </div>
-
-                    <form class=initialForm>
-                        <div class="form-group initial firstName">
-                            <label for="formGroupExampleInput"> Enter your first name to join the leader
-                                board.</label>
-                            <input type="text" class="form-control mr-20" id="formGroupExampleInput"
-                                placeholder="First name..." required>
-
-                            <!-- required doesn't work anymore because I used submit prevent in JS, not sure how to get around that -->
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-dark" id="button1" type="button" value="input">Submit</a>
-                        </div>
-                    </form>
                 </div>
+
+                <form class=initialForm>
+                    <div class="form-group initial firstName">
+                        <label for="formGroupExampleInput"> Enter your first name to join the leader
+                            board.</label>
+                        <input type="text" class="form-control mr-20" id="formGroupExampleInput"
+                            placeholder="First name..." required>
+
+                        <!-- required doesn't work anymore because I used submit prevent in JS, not sure how to get around that -->
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-dark" id="button1" type="button" value="input">Submit</a>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Optional JavaScript -->
