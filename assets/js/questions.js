@@ -7,6 +7,7 @@ var currentQuestionIndex = 0
 var questions = [
     {
         // created an array of objects for each question and answer
+        image: "./assets/images/enterprise2.jpg",
         question: "What is the name of the ship captained by Jean Luc Picard?",
         answer: "NCC-1701",
         choices: [
@@ -17,6 +18,7 @@ var questions = [
         ]
     },
     {
+        image: "./assets/images/spot.jpg",
         question: "What is Data's cats name?",
         answer: "Spot",
         choices: [
@@ -27,6 +29,7 @@ var questions = [
         ]
     },
     {
+        image: "./assets/images/geordi.jpg",
         question: "What was Geordi La Forge's station abord the Enterprise?",
         answer: "Chief Engineer",
         choices: [
@@ -37,6 +40,7 @@ var questions = [
         ]
     },
     {
+        image: "./assets/images/lore.jpg",
         question: "What was Data's brothers name?",
         answer: "Lore",
         choices: [
@@ -47,16 +51,18 @@ var questions = [
         ]
     },
     {
-        question: "Planet Remus is home to which race?",
-        answer: "Romulans",
+        image: "./assets/images/risa.jpg",
+        question: "Planet was planet Risa known for?",
+        answer: "Pleasure",
         choices: [
-            "Klingons",
-            "Romulans",
-            "Orions",
-            "Andorians",
+            "Freedom",
+            "Justice",
+            "Pleasure",
+            "Torture",
         ]
     },
     {
+        image: "./assets/images/borg.jpg",
         question: "What was the ultimate goal of The Borg?",
         answer: "Achieve perfection",
         choices: [
@@ -67,6 +73,7 @@ var questions = [
         ]
     },
     {
+        image: "./assets/images/troi.jpg",
         question: "Deanna Troi is half human, half what?",
         answer: "Betazoid",
         choices: [
@@ -77,6 +84,7 @@ var questions = [
         ]
     },
     {
+        image: "./assets/images/tashayar.jpg",
         question: "Who kept a small holographic portrait of Tasha Yar after her death?",
         answer: "Data",
         choices: [
@@ -87,6 +95,7 @@ var questions = [
         ]
     },
     {
+        image: "./assets/images/q.jpg",
         question: "What season did Q first appear?",
         answer: "Season 1",
         choices: [
@@ -97,16 +106,16 @@ var questions = [
         ]
     },
     {
-        question: "Which actor played the role of Wesley Crusher?",
-        answer: "Wil Wheaton",
+        image: "./assets/images/wesley2.jpg",
+        question: "On which planet did Wesley almost get the death penalty on?",
+        answer: "Rubicun III",
         choices: [
-            "Patrick Stewart",
-            "Wil Wheaton",
-            "Leonardo DiCaprio",
-            "Jonathan Frakes",
+            "Bajor",
+            "Betazed",
+            "Rigel III",
+            "Rubicun III",
         ]
     }
-
 ]
 
 // created a function that displays the questions and runs them until the timer ends or the last question is answered.
@@ -119,6 +128,7 @@ function nextQuestion() {
 
     var currentQuestion = questions[currentQuestionIndex]
     myQuestion.innerHTML = currentQuestion.question
+    document.getElementById("myImageTag").setAttribute("src", currentQuestion.image)
 
 
     // Created a for loop to iterate over the question choices in the array and created a button
@@ -128,6 +138,8 @@ function nextQuestion() {
         button.setAttribute('id', 'question' + i)
         questionArea.appendChild(button);
         setupClickHandler(i)
+
+        // document.getElementById("mainImage").src = currentQuestion.image[i]
 
     }
 }

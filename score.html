@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Game Over</title>
+    <title>Leader Board</title>
 
 </head>
 
@@ -41,37 +41,23 @@
                         <div class="carousel-item active" data-interval="0">
                             <!-- created a div for the main image to make it look nicer and scale better on dif size screens -->
                             <div class="mainImage">
-                                <img src="./assets/images/spacecat2.png" class="d-block w-100" alt="Cat in Space">
+                                <img src="./assets/images/spacecat.jpg" class="d-block w-100" alt="Cat in Space">
                             </div>
                         </div>
                     </div>
-
                     <!-- created a card for the text under the carousel -->
                     <div class="card border-dark mt-5 mb-3" style="max-width: 18rem;">
-                        <div class="card-header d-flex justify-content-center">Game Over</div>
+                        <div class="card-header d-flex justify-content-center">Leader Board</div>
                         <div class="card-body text-dark">
-                            <p>Congratulations!</p>
-                            <p>You boldly scored:</p>
-                            <!-- display final score -->
-                            <span id="score" style="font-size: 35px;">0</span>
+                            <p>Top Players</p>
+                            <span id="firstName" style="font-size: 35px;"></span>
+                            <span id="score" style="font-size: 35px;"></span>
+                            <!-- show all final scores and initials -->
+                            <!-- show users final score and initials -->
                         </div>
                         <div class="d-flex justify-content-center">
-                            <!-- add JS here to make initials and score board work -->
                         </div>
                     </div>
-
-                    <form class=initialForm>
-                        <div class="form-group initial firstName">
-                            <label for="formGroupExampleInput"> Enter your first name to join the leader
-                                board.</label>
-                            <input type="text" class="form-control mr-20" id="formGroupExampleInput"
-                                placeholder="First name..." required>
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-dark" id="button1" type="button" value="input">Submit</a>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -89,7 +75,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/score.js"></script>
 </body>
 
 </html>
