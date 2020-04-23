@@ -85,7 +85,7 @@ var questions = [
     },
     {
         image: "./assets/images/tashayar.jpg",
-        question: "Who kept a small holographic portrait of Tasha Yar after her death?",
+        question: "Who kept a holographic portrait of Tasha Yar after her death?",
         answer: "Data",
         choices: [
             "Data",
