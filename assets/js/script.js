@@ -8,23 +8,35 @@ var firstNameElement = document.getElementById("formGroupExampleInput")
 
 var btn = document.getElementById("button1")
 btn.addEventListener("click", function () {
-    localStorage.setItem("firstName", firstNameElement.value)
+    foo()
     window.location = "./score.html"
+
 })
 
+// current score and current name
+// combine them
+// store locally
+// existing scores
 
-// localStorage.getItem("firstName")
 
-// firstNameElement.textContent = firstName
-// console.log(firstName)
+score
+// 6
+firstNameElement.value
+// afton
+
+var scores = JSON.parse(localStorage.getItem("scores"))
+
+if (!scores) {
+    scores = []
+}
 
 
-// setting local storage for the initials to be stored at the end
-// localStorage.setItem("firstName", JSON.stringify(highScoreList)); {
+function foo() {
+    let user = {
+        name: firstNameElement.value,
+        score: score
+    };
+    scores.push(user)
+    localStorage.setItem("scores", JSON.stringify(scores))
 
-// }
-
-//submit prevent form - this will stop it from going to the 404 page
-//  
-
-// run this when the button is pressed
+}

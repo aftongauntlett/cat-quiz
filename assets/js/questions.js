@@ -202,7 +202,6 @@ function endGame() {
 // /gameover.html - use this when testing locally
 
 
-// Ran out of time to create the scoreboard and saving it local storage. Spent a lot of time on Google for this HW assignment.
 
 
 
