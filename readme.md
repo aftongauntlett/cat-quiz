@@ -1,8 +1,6 @@
 # Star Trek Quiz
 
 ![Github](https://img.shields.io/github/followers/aftongauntlett?style=for-the-badge&logo=appveyor")
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/aftongauntlett/star-trek-quiz?style=for-the-badge)
-
 
 **Github Repo:** https://github.com/aftongauntlett/star-trek-quiz
 
@@ -27,10 +25,6 @@ Make it through the quiz before the timer ends and you will be allowed to enter 
 * CSS
 * Bootstrap
 * JavaScript
-
-## API Resources
-https://openweathermap.org/api
-
 
 ## Screenshot:
 
